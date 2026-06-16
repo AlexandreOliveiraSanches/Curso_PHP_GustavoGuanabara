@@ -1,0 +1,23 @@
+body{
+    background-image: url(fundoPHP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.terminal{
+    width: 650px;
+    margin: 120px auto;
+    min-height: 350px;
+    background-color: #eeeeee;
+}
+.terminal::before{
+    content: "Curso de PHP - by Alexandre Oliveira";
+    display: block;
+    background-color: #3b4652;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.conteudo{
+    padding: 20px;
+}
