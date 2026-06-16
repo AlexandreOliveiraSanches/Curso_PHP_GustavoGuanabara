@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olá Mundo PHP</title>
+    <link rel="stylesheet" href="style/style.css">
     <style>
         h2{
             color: purple;
@@ -15,9 +16,13 @@
     </style>
 </head>
 <body>
-    <h1>Testando PHP</h1>
-    <?php
-    echo "<h2>\"Olá, Mundo\" em <span>PHP</span></h2>";
-    ?>
+    <div class="terminal">
+        <div class="conteudo">
+            <h1>Testando PHP</h1>
+            <?php
+            echo "<h2>\"Olá, Mundo\" em <span>PHP</span></h2>";
+            ?>
+        </div>
+    </div>
 </body>
 </html>
