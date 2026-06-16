@@ -24,7 +24,8 @@
                 <br/>pow()Potenciação
                 <br/>sqrt()Raiz Quadrada
                 <br/>round()Arredondamento
-                <br/>intval()Valor Inteiro da Variável";
+                <br/>intval()Valor Inteiro da Variável
+                <br/>number_format()Formatação";
             ?>
         </div>
     </div>
