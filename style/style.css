@@ -9,6 +9,10 @@ body{
     margin: 120px auto;
     min-height: 350px;
     background-color: #eeeeee;
+    transition: 0.5s;
+}
+.terminal:hover{
+    transform: scale(1.2);
 }
 .terminal::before{
     content: "Curso de PHP - by Alexandre Oliveira";
