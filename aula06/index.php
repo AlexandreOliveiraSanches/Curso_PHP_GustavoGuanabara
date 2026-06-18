@@ -10,6 +10,7 @@
     <div class="terminal">
         <div class="conteudo">
             <a href="../index.php">Voltar</a>
+            </br>
             <?php
                 $preço = 1500;
                 echo "O valor do produto é: R$" .number_format($preço,2,",",".");
