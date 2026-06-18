@@ -9,6 +9,8 @@
 <body>
     <div class="terminal">
         <div class="conteudo">
+            <a href="index.html">Voltar</a>
+            <br/>
             <?php
                 $nome = $_GET["nome"];
                 $anoNasc = $_GET["anoNasc"];
@@ -18,7 +20,7 @@
                 echo "</br>E atualmente tem $idade anos.";
             ?>
             </br>
-            <a href="index.html">Voltar</a>
+            
         </div>
     </div>
 </body>

@@ -9,6 +9,7 @@
 <body>
     <div class="terminal">
         <div class="conteudo">
+            <a href="../index.php">Voltar</a>
             <form method="get" action="index.php">
                 <p>
                     Informe o primeiro número<input type="number" name="n1" placeholder="Primeiro número" required>
@@ -40,7 +41,6 @@
                 <br/>number_format()Formatação";
             ?>
              </br>
-            <a href="../index.php">Voltar</a>
         </div>
     </div>
 </body>

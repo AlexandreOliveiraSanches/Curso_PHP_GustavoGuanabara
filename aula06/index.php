@@ -9,6 +9,7 @@
 <body>
     <div class="terminal">
         <div class="conteudo">
+            <a href="../index.php">Voltar</a>
             <?php
                 $preço = 1500;
                 echo "O valor do produto é: R$" .number_format($preço,2,",",".");
@@ -24,7 +25,7 @@
                     apenas na próxima vez que a variável for utilizada */
             ?>
              </br>
-            <a href="../index.php">Voltar</a>
+            
         </div>
     </div>
 </body>

@@ -9,6 +9,7 @@
 <body>
     <div class="terminal">
         <div class="conteudo">
+        <a href="index.html">Voltar</a>
         <?php
             $ano = $_GET["anoNas"];
             $nome = $_GET["nome"];
@@ -16,7 +17,6 @@
             echo "{$nome} tem {$idade} anos.";
         ?>
         </br>
-        <a href="index.html">Voltar</a>
         </div>
     </div>
 </body>

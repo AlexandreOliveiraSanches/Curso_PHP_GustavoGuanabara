@@ -9,6 +9,7 @@
 <body>
     <div class="terminal">
         <div class="conteudo">
+            <a href="../index.php">Voltar</a>
             <?php
                 $n1 = 2;
                 $n2 = 3;
@@ -35,7 +36,7 @@
                 echo "</br></br>Você tem $idade anos. Seu voto é " . ($idade >= 18 && $idade <= 64 ? "OBRIGATÓRIO." : "NÃO OBRIGATÓRIO."); # Utilizando unário, relacional e lógico.
             ?>
              </br>
-            <a href="../index.php">Voltar</a>
+            
         </div>
     </div>
 </body>
