@@ -22,23 +22,28 @@
                 </p>
             </form>
             <?php
-                $n1 = isset($_GET["n1"])?$_GET["n1"]:"0";
-                $n2 = isset($_GET["n2"])?$_GET["n2"]:"0";
+                $n1 = isset($_GET["n1"])?$_GET["n1"]:null;
+                $n2 = isset($_GET["n2"])?$_GET["n2"]:null;
 
-                echo "Números utilizados: $n1 e $n2<br/>";
-                echo "<br/>A soma vale: ". ($n1 + $n2);
-                echo "<br/>A subtração vale: ". ($n1 - $n2);
-                echo "<br/>A multiplicação vale: ". ($n1 * $n2);
-                echo "<br/>A divisão vale: ". ($n1 / $n2);
-                echo "<br/>O módulo vale: ". ($n1 % $n2);
-                echo "<br/>A média vale: ". (($n1 + $n2)/2);
-                echo "<br/><br/>Funções Matemáticas:
-                <br/>abs()Valor absoluto
-                <br/>pow()Potenciação
-                <br/>sqrt()Raiz Quadrada
-                <br/>round()Arredondamento
-                <br/>intval()Valor Inteiro da Variável
-                <br/>number_format()Formatação";
+                if($n1 != null && $n2 != null){
+                    echo "Números utilizados: $n1 e $n2<br/>";
+                    echo "<br/>A soma vale: ". ($n1 + $n2);
+                    echo "<br/>A subtração vale: ". ($n1 - $n2);
+                    echo "<br/>A multiplicação vale: ". ($n1 * $n2);
+                    echo "<br/>A divisão vale: ". ($n1 / $n2);
+                    echo "<br/>O módulo vale: ". ($n1 % $n2);
+                    echo "<br/>A média vale: ". (($n1 + $n2)/2);
+                    echo "<br/><br/>Funções Matemáticas:
+                    <br/>abs()Valor absoluto
+                    <br/>pow()Potenciação
+                    <br/>sqrt()Raiz Quadrada
+                    <br/>round()Arredondamento
+                    <br/>intval()Valor Inteiro da Variável
+                    <br/>number_format()Formatação";
+                }
+                else{
+                    echo "";
+                }
             ?>
              </br>
         </div>
