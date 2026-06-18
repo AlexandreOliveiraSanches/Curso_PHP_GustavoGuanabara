@@ -3,48 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condicional If</title>
+    <title>Aula09</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <div class="terminal">
         <div class="conteudo">
-            <form method="get" action="index.php">
-                <a href="../index.php">Voltar</a>
-                <br/>
-                <label for="nome">Digite seu nome</label>
-                <input type="text" name="nome" placeholder="Nome" required><br/><br/>
-                <label for="anoNasc">Informe o ano de nascimento</label>
-                <input type="number" min="1900" max="2100" name="anoNasc" placeholder="Ano" required><br/>
-                <input type="submit" value="Verificar">
-            </form>
+            <h1>Aula09</h1>
 
-            <?php
-                $nome = isset($_GET["nome"])?$_GET["nome"] : null;
-                $anoNasc = isset($_GET["anoNasc"])?$_GET["anoNasc"]:null;
-                $idade = date("Y") - $anoNasc;
+            <ul>
 
-                if($nome != null && $anoNasc != null){
-                    if($idade >= 18){
-                        $votar = "já pode votar";
-                        $dirigir = "já pode dirigir";
-                    }
-                    else{
-                        if($idade >= 16 && $idade < 18){
-                            $votar = "já pode votar";
-                            $dirigir = "não pode dirigir";
-                        }
-                        else{
-                            $votar = "não pode votar";
-                            $dirigir = "não pode dirigir";
+                <?php
+
+                    $arquivos = scandir('.');
+
+                    foreach ($arquivos as $arquivo){
+
+                        if (
+                            $arquivo != '.' &&
+                            $arquivo != 'index.php'
+                        ){
+
+                            echo "<li><a href='$arquivo'>$arquivo</a></li>";
                         }
                     }
-                    echo "<br/>$nome nasceu em $anoNasc, tem $idade anos e, com essa idade, $votar e $dirigir.";
-                }
-                else{
-                    echo "<br/>[Nenhum dado informado]";
-                }
-            ?>
+
+                ?>
+
+            </ul>
         </div>
     </div>
 </body>
