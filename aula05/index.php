@@ -21,8 +21,8 @@
                 </p>
             </form>
             <?php
-                $n1 = $_GET["n1"];
-                $n2 = $_GET["n2"];
+                $n1 = isset($_GET["n1"])?$_GET["n1"]:"0";
+                $n2 = isset($_GET["n2"])?$_GET["n2"]:"0";
 
                 echo "Números utilizados: $n1 e $n2<br/>";
                 echo "<br/>A soma vale: ". ($n1 + $n2);
