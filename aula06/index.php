@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores de Atribuição</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <div class="terminal">
@@ -23,6 +23,8 @@
                     a variável for utilizada; se for usado pós, o resultado será mostrado
                     apenas na próxima vez que a variável for utilizada */
             ?>
+             </br>
+            <a href="../index.php">Voltar</a>
         </div>
     </div>
 </body>

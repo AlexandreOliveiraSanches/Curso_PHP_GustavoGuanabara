@@ -22,6 +22,8 @@
             <?php
             echo "<h2>\"Olá, Mundo\" em <span>PHP</span></h2>";
             ?>
+            </br>
+            <a href="index.php">Voltar</a>
         </div>
     </div>
 </body>

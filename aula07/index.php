@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores Relacionais</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <div class="terminal">
@@ -34,6 +34,8 @@
                 $idade = date("Y") - 2005;
                 echo "</br></br>Você tem $idade anos. Seu voto é " . ($idade >= 18 && $idade <= 64 ? "OBRIGATÓRIO." : "NÃO OBRIGATÓRIO."); # Utilizando unário, relacional e lógico.
             ?>
+             </br>
+            <a href="../index.php">Voltar</a>
         </div>
     </div>
 </body>

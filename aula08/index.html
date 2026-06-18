@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Pessoais</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="conteudo">
+            <form method="get" action="dado.php">
+                <p>
+                    Nome <input type="text" name="nome" required>
+                </p>
+                <p>
+                    Ano de Nascimento <input type="number" min="1900" max="2100" name="anoNasc" placeholder="Ano" required>
+                </p>
+                <fieldset><legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="masc" value="Masculino">
+                    <label for="masc">Masculino</label><br/>
+                    <input type="radio" name="sexo" id="femi" value="Feminino">
+                    <label for="femi">Feminino</label><br/>
+                    <input type="radio" name="sexo" id="nInf" value="Não informado">
+                    <label for="nInf">Prefiro não dizer</label>
+                </fieldset><br/>
+                
+                <input type="submit" name="Enviar">
+            </form>
+             </br>
+            <a href="../index.php">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
