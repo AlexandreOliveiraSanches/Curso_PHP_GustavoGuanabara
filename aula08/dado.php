@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <?php
+         $tam = isset($_GET["tam"])?$_GET["tam"]:"12pt";
+         $cor = isset($_GET["cor"])?$_GET["cor"]:"#0000";
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raiz Quadrada</title>
+    <title>Informações Pessoais</title>
     <link rel="stylesheet" href="../style/style.css">
+    <style>
+        span.texto{
+            font-size: <?php echo $tam;?>;
+            color: <?php echo $cor;?>;;
+        }
+    </style>
 </head>
 <body>
     <div class="terminal">
@@ -16,8 +26,10 @@
                 $anoNasc = $_GET["anoNasc"];
                 $idade = date("Y") - $anoNasc;
                 $sexo = isset($_GET["sexo"])?$_GET["sexo"]:"[Não selecionado]";
-                echo "Seu nome é $nome, você nasceu em $anoNasc, sexo informado: $sexo.";
-                echo "</br>E atualmente tem $idade anos.";
+                $tam = isset($_GET["tam"])?$_GET["tam"]:"12pt";
+                $cor = isset($_GET["cor"])?$_GET["cor"]:"#0000";
+                echo "<span class='texto'>Seu nome é $nome, você nasceu em $anoNasc, sexo informado: $sexo.
+                </br>E atualmente tem $idade anos.</span>";
             ?>
             </br>
             
