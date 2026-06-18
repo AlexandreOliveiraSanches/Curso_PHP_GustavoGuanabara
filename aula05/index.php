@@ -12,10 +12,10 @@
             <a href="../index.php">Voltar</a>
             <form method="get" action="index.php">
                 <p>
-                    Informe o primeiro número<input type="number" name="n1" placeholder="Primeiro número" required>
+                    Informe o primeiro número<input type="number" step="0.01" name="n1" placeholder="Primeiro número" required>
                 </p>
                 <p>
-                    Informe o segundo número<input type="number" name="n2" placeholder="Segundo número" required>
+                    Informe o segundo número<input type="number" step="0.01" name="n2" placeholder="Segundo número" required>
                 </p>
                 <p>
                     <input type="submit" value="Confirmar">
