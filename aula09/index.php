@@ -29,13 +29,15 @@
                         $votar = "já pode votar";
                         $dirigir = "já pode dirigir";
                     }
-                    elseif($idade >= 16 && $idade < 18){
-                        $votar = "já pode votar";
-                        $dirigir = "não pode dirigir";
-                    }
                     else{
-                        $votar = "não pode votar";
-                        $dirigir = "não pode dirigir";
+                        if($idade >= 16 && $idade < 18){
+                            $votar = "já pode votar";
+                            $dirigir = "não pode dirigir";
+                        }
+                        else{
+                            $votar = "não pode votar";
+                            $dirigir = "não pode dirigir";
+                        }
                     }
                     echo "<br/>$nome nasceu em $anoNasc, tem $idade anos e, com essa idade, $votar e $dirigir.";
                 }
