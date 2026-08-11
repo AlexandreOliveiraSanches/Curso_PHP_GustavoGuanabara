@@ -21,7 +21,6 @@
 
                         if (
                             $arquivo != '.' &&
-                            $arquivo != 'index.php' &&
                             pathinfo($arquivo, PATHINFO_EXTENSION) != "php"
                         ){
 
