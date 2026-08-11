@@ -11,9 +11,13 @@
         <div class="conteudo">
             <a href="index.php">Voltar</a>
             <br/>
-            <form method="get" action="">
- 
-            </form>
+            <?php
+                $cont = 1;
+                while($cont <= 10) {
+                    echo "$cont"."<br>";
+                    $cont++;
+                }
+            ?>
         </div>
     </div>
 </body>
